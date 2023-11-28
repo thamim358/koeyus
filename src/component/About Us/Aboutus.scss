@@ -1,0 +1,24 @@
+.photos {
+    position: absolute;
+    pointer-events: none; /* Allows clicks to fall through to elements behind */
+    z-index: -1; 
+    // top: 10px;
+    left: 100px;
+    width: 15%;
+    height: 20%;
+  }
+  
+  .photo {
+    width: 120%;
+    height: 120%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .photo.one {
+    grid-column: 4;
+    grid-row: 5;
+    
+  }

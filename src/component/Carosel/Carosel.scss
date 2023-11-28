@@ -1,0 +1,151 @@
+/* Global styles */
+
+/* Styles for Desktop */
+.top-cities-wrapper {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 400px;
+    padding-top: 25px;
+  }
+  
+  .top-cities-wrapper h1 {
+    text-align: left;
+    color: #545454;
+    font-weight: 300;
+    font-size: 27px;
+  }
+  
+  .top-cities-carousel-wrap {
+    margin-top: 25px;
+    height: 320px;
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .city-card-wrapper {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .city-card {
+    display: flex;
+    flex-direction: column;
+    width: 216px;
+    height: 290px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 2s;
+    margin: 10px auto;
+    box-shadow: -2px 4px 10px -3px rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  
+  .city-card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 216px;
+    height: 219px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .city-card:hover {
+    transform: translateY(-0.2em);
+    box-shadow: -4px 8px 15px -3px rgba(0, 0, 0, 0.47);
+    color: #FB2465;
+  }
+  
+  /* Triangle styles... */
+  
+  .city-details {
+    width: 216px;
+    min-height: 50px;
+    background-color: white;
+    transition: display 1s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Other styles... */
+  
+  /* Media Queries */
+  
+  /* Tablets */
+  @media only screen and (max-width: 1024px) {
+    .top-cities-wrapper {
+      width: 90%;
+    }
+    
+    .top-cities-wrapper h1 {
+      font-size: 22px;
+    }
+    
+    .top-cities-carousel-wrap {
+      margin-top: 15px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    }
+    
+    .city-card {
+      width: 160px;
+      height: 200px;
+    }
+    
+    .city-card-img {
+      width: 160px;
+      height: 160px;
+    }
+    
+    .city-details {
+      width: 160px;
+    }
+  
+    /* Other adjustments for tablets... */
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 480px) {
+    .top-cities-wrapper {
+      width: 95%;
+      height: auto;
+      padding-top: 15px;
+    }
+    
+    .top-cities-wrapper h1 {
+      font-size: 20px;
+    }
+    
+    .top-cities-carousel-wrap {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      height: auto;
+    }
+    
+    .city-card {
+      width: 140px;
+      height: 180px;
+    }
+    
+    .city-card-img {
+      width: 140px;
+      height: 140px;
+    }
+    
+    .city-details {
+      width: 140px;
+    }
+  
+    /* Other adjustments for mobile... */
+  }
+  

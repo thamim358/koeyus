@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+// @import "@fontsource/zen-maru-gothic"; // Defaults to weight 400
+// @import "@fontsource/zen-maru-gothic/700.css";
+
+body {
+  
+  margin: 0;
+  body {
+    font-family: "Sulphur Point";
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
