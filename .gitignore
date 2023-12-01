@@ -16,3 +16,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+JWT_SECRET=yourSecretKeyHere
+require('dotenv').config();
+const JWT_SECRET = process.env.JWT_SECRET;

@@ -1,18 +1,42 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import { Form, Input, Button } from "antd";
 import Navbar from "../component/Navbar/Navbar"; // Import your Navbar component
+import { response } from "express";
 
 function Login() {
   const [isLogin, setIsLogin] = useState(true);
 
-  const onFinishLogin = (values) => {
-    console.log("Received login values:", values);
-    // Handle login logic here
+
+  const onFinishLogin = async (values) => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        email: values.email,
+        password: values.password,
+        
+      });
+  
+      console.log('Login successful:', response.data);
+      // Handle successful login - e.g., set user state, redirect, etc.
+    } catch (error) {
+      console.error('Login failed:', error.response.data);
+      // Handle login failure - e.g., show error message to the user
+    }
   };
-  const onFinishSignup = (values) => {
-    console.log("Received login values:", values);
-    // Handle login logic here
+  const onFinishSignup = async (values) => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/signup', {
+        email: values.email,
+        password: values.password,
+      });
+
+      console.log('Signup successful:', response.data);
+      // Handle successful signup - e.g., show success message, redirect to login, etc.
+    } catch (error) {
+      console.error('Signup failedsss:', error.response.data);
+      // Handle signup failure - e.g., show error message to the user
+    }
   };
   return (
     <>
@@ -126,35 +150,6 @@ function Login() {
                       className="rounded-full ring-1 ring-black"
                     />
                   </Form.Item>
-
-                  <Form.Item
-                    name="confirmPassword"
-                    dependencies={["password"]}
-                    rules={[
-                      {
-                        required: true,
-                        message: "Please confirm your password!",
-                      },
-                      ({ getFieldValue }) => ({
-                        validator(_, value) {
-                          if (!value || getFieldValue("password") === value) {
-                            return Promise.resolve();
-                          }
-                          return Promise.reject(
-                            new Error(
-                              "The two passwords that you entered do not match!"
-                            )
-                          );
-                        },
-                      }),
-                    ]}
-                  >
-                    <Input.Password
-                      placeholder="Confirm Password"
-                      className="rounded-full ring-1 ring-black"
-                    />
-                  </Form.Item>
-
                   <Form.Item>
                     <Button
                       type="primary"
@@ -174,6 +169,11 @@ function Login() {
                   >
                     Log In
                   </Link>
+                  {/* {response.data && (
+                  <div className="mt-3 text-bold text-lg text-green-500">
+                    {response.data}
+                  </div>
+                )} */}
                 </div>
               </>
               )}
