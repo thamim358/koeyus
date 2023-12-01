@@ -15,7 +15,7 @@ function Layout() {
     <>
     
     <div className="">
-      <NavBar/>
+      {/* <NavBar/> */}
       <Header/>
       <AboutUs/>
       <CardCarousel/>

@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Sulphur Point','sans serif'],
-        'mono': ['Sulphur Point', 'sans-serif'],
+        'mono': ['wire-frame', 'sans-serif'],
       },
       spacing: {
         '3px': '60px',

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../img/logo7.png";
+import logo from "../img/logo6.png";
 import WOW from "wow.js";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
@@ -63,10 +63,10 @@ function Navbar() {
         id="Home"
         className="sticky  w-full bg-white nav-bar sm:w-full z-10 "
       >
-        <div className=" sm:mx-auto md:mx-10 lg:mx-20 flex items-center justify-between py-3 ">
-          <div className="text-[#FF5C00] font-black font-mono text-3xl  ml-4">
+        <div className=" sm:mx-auto md:mx-10 lg:mx-10 flex items-center justify-between py-3 ">
+          <div className=" font-black font-mono text-3xl  ml-4">
             {/* SUMADULA */}
-            <img src={logo} alt="wdwd" className="h-10 filter-grayscale" style={imageStyle}/>
+            <img src={logo} alt="wdwd" className="h-10 brightness-200"/>
           </div>
           <nav>
             <div className="flex items-center justify-between md:hidden">
@@ -101,7 +101,7 @@ function Navbar() {
             <ul
               className={`${
                 isMobileMenuOpen ? "block" : "hidden"
-              } md:flex md:space-x-10 tracking-widest justify-between items-center `}
+              } md:flex md:space-x-6 tracking-widest justify-between items-center `}
             >
               <li>
                 <Link
@@ -109,7 +109,7 @@ function Navbar() {
                   to="/"
                 
                 >
-                   <div className="text-black  hover:text-gray-400">Home</div> 
+                   <div className="text-black  hover:text-[#ffd300]">Home</div> 
                 </Link>
               </li>
               <li >
@@ -117,7 +117,7 @@ function Navbar() {
                   className=" font-semibold font-sans cursor-pointer"
                   to="/"
                 >
-                   <div className="text-black  hover:text-gray-400">About Us</div> 
+                   <div className="text-black  hover:text-[#ffd300]">About Us</div> 
                 </Link>
               </li>
               <li >
@@ -126,7 +126,7 @@ function Navbar() {
                   to="/projects"
                   
                 >
-                  <div className="text-black  hover:text-gray-400">  Projects</div>
+                  <div className="text-black  hover:text-[#ffd300]">  Projects</div>
                
                 </Link>
               </li>
@@ -136,7 +136,7 @@ function Navbar() {
                   to="/certifications"
                   
                 >
-               <div className="text-black  hover:text-gray-400 ">     Certifications</div>
+               <div className="text-black  hover:text-[#ffd300] ">     Certifications</div>
                 </Link>
               </li>
               <li>
@@ -144,7 +144,7 @@ function Navbar() {
                   className=" font-semibold font-sans cursor-pointer"
                   to="/gallery"
                 >
-                  <div className="text-black  hover:text-gray-400">  Gallery</div>
+                  <div className="text-black  hover:text-[#ffd300]">  Gallery</div>
                 </Link>
               </li>
               <li className="">
@@ -153,7 +153,16 @@ function Navbar() {
                   to="/contactus"
                   
                 >
-                 <div className="nline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-gray-900 focus:ring-4  "> Contact Us </div>
+                 <div className="text-black  hover:text-[#ffd300] "> Contact Us </div>
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  className=" font-semibold font-sans cursor-pointer"
+                  to="/login"
+                  
+                >
+                 <div className="inline-flex justify-center items-center py-1 px-3 text-base font-medium text-center text-black rounded-lg bg-white  ring-1 ring-black  hover:text-[#ffd300]"> Login / Sign Up</div>
                 </Link>
               </li>
             </ul>
@@ -207,7 +216,7 @@ function Navbar() {
        
               onClick={() => setMobileMenuOpen(false)}
             >
-            <div className="text-black  hover:text-gray-400">Home</div> 
+            <div className="text-black  hover:text-[#ffd300]">Home</div> 
             </Link>
           </li>
           <li className="">
@@ -216,7 +225,7 @@ function Navbar() {
               to="/"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-gray-400">About Us</div> 
+              <div className="text-black  hover:text-[#ffd300]">About Us</div> 
             </Link>
           </li>
           <li className="">
@@ -225,7 +234,7 @@ function Navbar() {
               to="/projects"
               onClick={() => setMobileMenuOpen(false)}
             >
-            <div className="text-black  hover:text-gray-400">Projects</div> 
+            <div className="text-black  hover:text-[#ffd300]">Projects</div> 
             </Link>
           </li>
           <li className="">
@@ -234,7 +243,7 @@ function Navbar() {
               to="/certifications"
               onClick={() => setMobileMenuOpen(false)}
             >
-             <div className="text-black  hover:text-gray-400">Certifications</div> 
+             <div className="text-black  hover:text-[#ffd300]">Certifications</div> 
             </Link>
           </li>
           <li className="">
@@ -243,7 +252,7 @@ function Navbar() {
               to="/gallery"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-gray-400">Gallery</div> 
+              <div className="text-black  hover:text-[#ffd300]">Gallery</div> 
             </Link>
           </li>
           <li className="">
@@ -252,7 +261,7 @@ function Navbar() {
               to="/contactus"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-gray-400">Contact Us</div> 
+              <div className="text-black  hover:text-[#ffd300]">Contact Us</div> 
             </Link>
           </li>
         </ul>

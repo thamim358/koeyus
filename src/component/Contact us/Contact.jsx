@@ -141,7 +141,7 @@ function ContactUs() {
       <section className="contact space">
   
           <div className=" lg:p-3px sm:p-10 p-10">
-          <div className="  text-4xl text-black mb-4 font-bold wow fadeInUp ">
+          <div className="  text-4xl text-[#ffd300] mb-4 font-bold wow fadeInUp ">
                     Book an Appoitment
                   </div>
                   <div className="text-lg font-medium m:mb-5 mb-5">We welcome collaborations, inquiries, and opportunities to bring your architectural visions to life. Reach out to our team to embark on an inspiring journey of design and innovation.</div>
@@ -162,7 +162,7 @@ function ContactUs() {
               <div className="flex ">
                 <div className=" p-2">
                   <IconMail
-                    className=""
+                    className="text-[#ffd300]"
                     size={40}
            
                   />
@@ -173,16 +173,16 @@ function ContactUs() {
                   </div>
                   <a
                     href="https://mail.google.com/mail/u/0/#inbox"
-                    className="text-black font-medium text-lg"
+                    className="text-gray-500  font-medium text-lg"
                   >
-                   <div className="text-black">info@koyeus.ind.in</div>
+                   <div className="text-gray-500 ">info@koyeus.ind.in</div>
                   </a>
                 </div>
               </div>
               <div className="flex  mt-3 wow fadeInUp">
                 <div className=" p-2">
                   <IconPhoneCalling
-                    className=""
+                    className="text-[#ffd300]"
                     size={40}
                   
                   />
@@ -191,7 +191,7 @@ function ContactUs() {
                   <div className="text-black font-semibold text-lg ">
                     Phone Number
                   </div>
-                  <div className="text-black font-medium text-lg">
+                  <div className="text-gray-500 font-medium text-lg">
                   +91 9920617183/88 
                   </div>
                 </div>
@@ -199,7 +199,7 @@ function ContactUs() {
               <div className="flex  mt-3 wow fadeInUp">
                 <div className=" p-2">
                   <IconLocation
-                    className=""
+                    className="text-[#ffd300]"
                     size={40}
                  
                   />
@@ -208,14 +208,14 @@ function ContactUs() {
                   <div className="text-black font-semibold text-lg ">
                     Location
                   </div>
-                  <div className="text-black font-medium text-lg">
+                  <div className="text-gray-500  font-medium text-lg">
                   306 B, Venus Building Lokhandwala 1sr Crossroad, Swami Samartha Nagar,
 
                   </div>
-                  <div className="text-black font-medium text-lg">
+                  <div className="text-gray-500  font-medium text-lg">
                   Lokhandwala Complex, Andheri West,
                   </div>
-                  <div className="text-black0 font-medium text-lg">
+                  <div className="text-gray-500 font-medium text-lg">
                   Mumbai, Maharashtra 400053, India
                   </div>
                 </div>
@@ -274,7 +274,7 @@ function ContactUs() {
                         required
                       ></textarea>
                       <button
-                        className="bg-black  text-white font-bold py-2 px-14 rounded-full  wow bounceIn cursor-pointer"
+                        className="bg-[#ffd300]  text-black font-bold py-2 px-14 rounded-full  wow bounceIn cursor-pointer "
                         type="submit"
                       >
                         Send

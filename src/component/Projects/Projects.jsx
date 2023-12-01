@@ -40,7 +40,7 @@ const Projects = () => {
     <Navbar/>
       <section className="contact space p-10" id="contactme">
       <div className="lg:px-12 pb-10">
-        <div className="text-4xl sm:text-4xl lg:text-5xl text-black self-start font-bold mb-10">
+        <div className="text-4xl sm:text-4xl lg:text-5xl text-[#ffd300] self-start font-bold mb-10">
           Our Projects
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
