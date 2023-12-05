@@ -51,7 +51,7 @@ function Footer() {
                         className="  font-semibold font-sans cursor-pointer"
                         to="/"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           Home
                         </div>
                       </Link>
@@ -61,7 +61,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/projects"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3">
                           {" "}
                           Projects
                         </div>
@@ -72,7 +72,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/certifications"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           {" "}
                           Certifications
                         </div>
@@ -83,7 +83,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/gallery"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3">
                           {" "}
                           Gallery
                         </div>
@@ -94,7 +94,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/contactus"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           {" "}
                           Contact Us{" "}
                         </div>
@@ -112,7 +112,7 @@ function Footer() {
                         className="  font-semibold font-sans cursor-pointer"
                         to="/privacypolicy"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           Privacy Policy
                         </div>
                       </Link>
@@ -122,7 +122,7 @@ function Footer() {
                         className="font-semibold font-sans cursor-pointer"
                         to="/terms&conditions"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           Terms & Conditions
                         </div>
                       </Link>
@@ -132,7 +132,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/license"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3">
                           {" "}
                           Licensing
                         </div>
@@ -143,7 +143,7 @@ function Footer() {
                         className=" font-semibold font-sans cursor-pointer"
                         to="/cookies"
                       >
-                        <div className="text-gray-500 hover:text-black mb-3 ">
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           {" "}
                           Cookies Policy
                         </div>
@@ -157,27 +157,27 @@ function Footer() {
             <div className="sm:flex sm:items-center sm:justify-between">
               <span className="text-lg text-black sm:text-center">
                 © 2023{" "}
-                <span className="hover:underline text-black">koyeus</span>. All
+                <span className="hover:underline text-[#ffd300]">koyeus</span>. All
                 Rights Reserved.
               </span>
               <div className="flex mt-4 sm:justify-center sm:mt-0">
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                  className="text-gray-500 hover:text-[#ffd300] "
                 >
                       <IconBrandFacebook size={30}/>
                   <span className="sr-only">Facebook page</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
                  <IconBrandInstagram size={30}/>
                   <span className="sr-only">Instgram page</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
                        <IconBrandX size={30}/>
 
@@ -185,14 +185,14 @@ function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
                 <IconBrandLinkedin size={30}/>
                   <span className="sr-only">limkdin account</span>
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                  className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
                   <IconBrandYoutube size={30}/>
                   <span className="sr-only">youtube account</span>

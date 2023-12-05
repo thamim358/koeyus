@@ -26,7 +26,7 @@ export const Offer = () => {
         style={{ textAlign: "justify", textJustify: "auto" }}
       >
         <div className="">
-          <p className="text-4xl sm:text-4xl lg:text-5xl text-[#ffd300] font-bold text-center wow fadeInUp pt-4">
+          <p className="text-4xl sm:text-4xl lg:text-5xl text-[#ffd300] font-mono font-bold text-center wow fadeInUp pt-4">
             What we offer
           </p>
           <div className="flex justify-center h-auto">

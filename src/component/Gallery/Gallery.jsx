@@ -10,7 +10,7 @@ function Gallery() {
     <Navbar/>
       <section className="contact space">
         <div className="lg:px-12 pb-10 p-10">
-          <div className="text-4xl sm:text-4xl lg:text-5xl  text-[#ffd300] self-start font-bold mb-5">
+          <div className="text-4xl sm:text-4xl lg:text-5xl  text-[#ffd300] font-mono self-start font-bold mb-5">
             Gallery
           </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">

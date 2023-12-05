@@ -37,20 +37,20 @@ export const AboutUs = () => {
             </div>
   
             <div className="w-full lg:w-3/5 flex flex-col p-6 justify-start items-start lg:items-end  ">
-              <div className="text-4xl text-[#ffd300] font-bold mb-1 lg:mb-3 self-start  wow fadeInUp">
+              <div className="text-4xl text-[#ffd300] font-bold mb-1 lg:mb-3 self-start font-mono wow fadeInUp">
              About Us
               </div>
               <div className="text-medium text-[#7B7B7B] font-normal leading-relaxed  lg:mb-3 wow fadeInUp">
               At Koeus, we believe in the transformative power of exceptional design and architecture. As a pioneering firm in the industry, we have been redefining spaces and creating innovative designs that resonate with functionality, aesthetics, and sustainability.
               </div>
               <div className="  ">
-              <div className="text-2xl text-[#ffd300] font-bold  lg:mb-2 self-start  wow fadeInUp">
+              <div className="text-2xl text-[#ffd300] font-bold font-mono lg:mb-2 self-start  wow fadeInUp">
              Our Vision
               </div>
               <div className="text-medium text-[#7B7B7B] font-normal leading-relaxed  lg:mb-3 wow fadeInUp">
               Our vision is to craft spaces that inspire, elevate experiences, and stand the test of time. We strive to push boundaries, embrace creativity, and deliver unparalleled design solutions that exceed our clients' expectations.
               </div>
-              <div className="text-2xl text-[#ffd300] font-bold mb-2 lg:mb-3 self-start  wow fadeInUp">
+              <div className="text-2xl text-[#ffd300] font-mono font-bold mb-2 lg:mb-3 self-start  wow fadeInUp">
              Our Mission
               </div>
               <div className="text-medium text-[#7B7B7B] font-normal leading-relaxed  lg:mb-6 wow fadeInUp">

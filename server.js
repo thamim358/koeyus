@@ -1,6 +1,4 @@
 // server.js
-
-require('dotenv').config(); // Load environment variables from .env file
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,27 +8,9 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-// const path = require('path');
 
-// module.exports = {
-//   // Other webpack configurations...
-//   resolve: {
-//     fallback: {
-//       "path": require.resolve("path-browserify"),
-//       "crypto": require.resolve("crypto-browserify"),
-//       "stream": require.resolve("stream-browserify"),
-//       "zlib": require.resolve("browserify-zlib"),
-//       "http": require.resolve("stream-http"),
-//       "url": require.resolve("url/"),
-//       "querystring": require.resolve("querystring-es3"),
-//       "util": require.resolve("util/")
-//     }
-//   }
-//   // Other webpack configurations...
-// };
 // MongoDB connection setup
 mongoose.connect('mongodb+srv://thamimansari358:U8n8Cjj8ycTP2DTQ@cluster0.nikypym.mongodb.net/?retryWrites=true&w=majority', {
-
 });
 
 // User Schema

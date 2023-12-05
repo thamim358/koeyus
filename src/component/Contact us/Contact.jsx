@@ -141,7 +141,7 @@ function ContactUs() {
       <section className="contact space">
   
           <div className=" lg:p-3px sm:p-10 p-10">
-          <div className="  text-4xl text-[#ffd300] mb-4 font-bold wow fadeInUp ">
+          <div className="  text-4xl text-[#ffd300] mb-4 font-bold  font-mono wow fadeInUp ">
                     Book an Appoitment
                   </div>
                   <div className="text-lg font-medium m:mb-5 mb-5">We welcome collaborations, inquiries, and opportunities to bring your architectural visions to life. Reach out to our team to embark on an inspiring journey of design and innovation.</div>
@@ -175,7 +175,7 @@ function ContactUs() {
                     href="https://mail.google.com/mail/u/0/#inbox"
                     className="text-gray-500  font-medium text-lg"
                   >
-                   <div className="text-gray-500 ">info@koyeus.ind.in</div>
+                   <div className="text-gray-500 ">Koyeusarchitects@gmail.com</div>
                   </a>
                 </div>
               </div>

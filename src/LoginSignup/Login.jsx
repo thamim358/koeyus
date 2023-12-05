@@ -1,43 +1,50 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 import { Form, Input, Button } from "antd";
-import Navbar from "../component/Navbar/Navbar"; // Import your Navbar component
-import { response } from "express";
+import Navbar from "../component/Navbar/Navbar";
 
 function Login() {
   const [isLogin, setIsLogin] = useState(true);
-
+  const [signupSuccessMsg, setSignupSuccessMsg] = useState("");
+  const [signupErrorMsg, setSignupErrorMsg] = useState("");
+  const [loginErrorMsg, setLoginErrorMsg] = useState("");
+  const [loginSuccessMsg, setLoginSuccessMsg] = useState("");
 
   const onFinishLogin = async (values) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post("http://localhost:5000/api/login", {
         email: values.email,
         password: values.password,
-        
       });
-  
-      console.log('Login successful:', response.data);
+
+      console.log("Login successful:", response.data);
       // Handle successful login - e.g., set user state, redirect, etc.
+      setLoginSuccessMsg("Login successful"); // Set login success message
+      setLoginErrorMsg("");
     } catch (error) {
-      console.error('Login failed:', error.response.data);
-      // Handle login failure - e.g., show error message to the user
+      console.error("Login failed:", error.response.data);
+      setLoginErrorMsg("Invalid email or password");
+      setLoginSuccessMsg(""); // Reset success message
     }
   };
   const onFinishSignup = async (values) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.post("http://localhost:5000/api/signup", {
         email: values.email,
         password: values.password,
       });
 
-      console.log('Signup successful:', response.data);
-      // Handle successful signup - e.g., show success message, redirect to login, etc.
+      console.log("Signup successful:", response.data);
+      setSignupSuccessMsg("User created successfully.");
+      setSignupSuccessMsg("");
     } catch (error) {
-      console.error('Signup failedsss:', error.response.data);
-      // Handle signup failure - e.g., show error message to the user
+      console.error("Signup failed:", error.response.data);
+      setSignupErrorMsg("Email already exists");
+      setSignupErrorMsg("");
     }
   };
+
   return (
     <>
       <Navbar />
@@ -66,7 +73,10 @@ function Login() {
                         },
                       ]}
                     >
-                      <Input placeholder="Email" className="rounded-full h-8 ring-1 ring-black" />
+                      <Input
+                        placeholder="Email"
+                        className="rounded-full h-8 ring-1 ring-black"
+                      />
                     </Form.Item>
 
                     <Form.Item
@@ -82,14 +92,13 @@ function Login() {
                         placeholder="Password"
                         className=" rounded-full ring-1 ring-black"
                       />
-                       <Link
+                    </Form.Item>
+                    <Link
                       to="/forgot-password"
                       className="text-blue-500 flex justify-end"
                     >
                       Forgot Password?
                     </Link>
-                    </Form.Item>
-                   
                     <Form.Item>
                       <Button
                         type="primary"
@@ -99,6 +108,16 @@ function Login() {
                         Log In
                       </Button>
                     </Form.Item>
+                    {loginSuccessMsg && (
+                      <div>
+                        <p style={{ color: "green" }}>{loginSuccessMsg}</p>
+
+                        <Link to="/">Go to Home</Link>
+                      </div>
+                    )}
+                    {loginErrorMsg && (
+                      <p style={{ color: "red" }}>{loginErrorMsg}</p>
+                    )}
                   </Form>
                   <div className="text-center">
                     <span>Don't have an account? </span>
@@ -109,73 +128,76 @@ function Login() {
                     >
                       Sign Up
                     </Link>
-                   
                   </div>
                 </>
               ) : (
                 <>
-                <h1 className="text-2xl font-bold mb-4 self-start">
-                  Create Account
-                </h1>
-                <Form
-                  name="signup"
-                  onFinish={onFinishSignup}
-                  initialValues={{
-                    remember: true,
-                  }}
-                >
-                  <Form.Item
-                    name="email"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Please input your email!",
-                      },
-                    ]}
+                  <h1 className="text-2xl font-bold mb-4 self-start">
+                    Create Account
+                  </h1>
+                  <Form
+                    name="signup"
+                    onFinish={onFinishSignup}
+                    initialValues={{
+                      remember: true,
+                    }}
                   >
-                    <Input placeholder="Email" className="rounded-full h-8 ring-1 ring-black" />
-                  </Form.Item>
-
-                  <Form.Item
-                    name="password"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Please input your password!",
-                      },
-                    ]}
-                  >
-                    <Input.Password
-                      placeholder="Password"
-                      className="rounded-full ring-1 ring-black"
-                    />
-                  </Form.Item>
-                  <Form.Item>
-                    <Button
-                      type="primary"
-                      htmlType="submit"
-                      className="w-full text-black bg-white ring-1 ring-black mt-2"
+                    <Form.Item
+                      name="email"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please input your email!",
+                        },
+                      ]}
                     >
-                      Sign Up
-                    </Button>
-                  </Form.Item>
-                </Form>
-                <div className="text-center">
-                  <span>Already have an account? </span>
-                  <Link
-                    to="#"
-                    onClick={() => setIsLogin(true)}
-                    className="text-blue-500"
-                  >
-                    Log In
-                  </Link>
-                  {/* {response.data && (
-                  <div className="mt-3 text-bold text-lg text-green-500">
-                    {response.data}
+                      <Input
+                        placeholder="Email"
+                        className="rounded-full h-8 ring-1 ring-black"
+                      />
+                    </Form.Item>
+
+                    <Form.Item
+                      name="password"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please input your password!",
+                        },
+                      ]}
+                    >
+                      <Input.Password
+                        placeholder="Password"
+                        className="rounded-full ring-1 ring-black"
+                      />
+                    </Form.Item>
+                    <Form.Item>
+                      <Button
+                        type="primary"
+                        htmlType="submit"
+                        className="w-full text-black bg-white ring-1 ring-black mt-2"
+                      >
+                        Sign Up
+                      </Button>
+                    </Form.Item>
+                    {signupSuccessMsg && (
+                      <p style={{ color: "green" }}>{signupSuccessMsg}</p>
+                    )}
+                    {signupErrorMsg && (
+                      <p style={{ color: "red" }}>{signupErrorMsg}</p>
+                    )}
+                  </Form>
+                  <div className="text-center">
+                    <span>Already have an account? </span>
+                    <Link
+                      to="#"
+                      onClick={() => setIsLogin(true)}
+                      className="text-blue-500"
+                    >
+                      Log In
+                    </Link>
                   </div>
-                )} */}
-                </div>
-              </>
+                </>
               )}
             </div>
           </div>

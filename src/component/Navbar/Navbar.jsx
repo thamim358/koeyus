@@ -156,7 +156,7 @@ function Navbar() {
                  <div className="text-black  hover:text-[#ffd300] "> Contact Us </div>
                 </Link>
               </li>
-              <li className="">
+              {/* <li className="">
                 <Link
                   className=" font-semibold font-sans cursor-pointer"
                   to="/login"
@@ -164,7 +164,7 @@ function Navbar() {
                 >
                  <div className="inline-flex justify-center items-center py-1 px-3 text-base font-medium text-center text-black rounded-lg bg-white  ring-1 ring-black  hover:text-[#ffd300]"> Login / Sign Up</div>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
