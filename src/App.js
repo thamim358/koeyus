@@ -12,6 +12,7 @@ import CookieConsent from "react-cookie-consent";
 import ScrollToTop from "./Scrolltotop.jsx";
 import Error from "./Error.js";
 import Login from "./LoginSignup/Login.jsx";
+import Terms from "./component/TermAndConditions/Terms.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,17 +35,16 @@ function App() {
         <Router>
           <ScrollToTop />
           <div className="App">
-            {/* Other components */}
-            {/* <CookieConsent
+            <CookieConsent
               location="bottom"
               buttonText="I understand"
               cookieName="myCookieConsent"
-              style={{ background: "#333" }}
-              buttonStyle={{ color: "#00000", fontSize: "13px" }}
+              style={{ background: "#ffffff" ,color:"black"}}
+              buttonStyle={{ background: "#ffd300", fontSize: "13px",color:"000000" }}
               expires={365}
             >
               This website uses cookies to enhance the user experience.
-            </CookieConsent> */}
+            </CookieConsent>
           </div>
           {/* <Navbar/> */}
           <Routes>
@@ -54,7 +54,9 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/certifications" element={<Certifications />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/terms&conditions" element={<Terms />} />
             <Route path="*" element={<Error />} />
+            
           </Routes>
           {/* <Footer/> */}
         </Router>
