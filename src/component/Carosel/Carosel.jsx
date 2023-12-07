@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import Splide from "@splidejs/splide";
 import WOW from "wow.js";
-
 import arch1 from "../img/arch1.jpg";
 import arch2 from "../img/arch2.jpg";
 import arch3 from "../img/arch3.jpg";

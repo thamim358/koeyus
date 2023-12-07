@@ -7,7 +7,6 @@ import {
   IconBrandInstagram,
   IconBrandFacebook,
   IconBrandLinkedin,
-  IconBrandTwitter,
   IconBrandYoutube,
   IconBrandX,
 } from "@tabler/icons-react";

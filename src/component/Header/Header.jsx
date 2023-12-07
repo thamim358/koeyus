@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import WOW from "wow.js";
-import { Link } from "react-router-dom";
-import { Tabs } from "antd";
 import "./Header.scss";
 import logo from "../img/logo6.png";
 
-const { TabPane } = Tabs;
 
 function Header() {
 
@@ -17,7 +14,7 @@ function Header() {
   return (
     <>
       <section id="home ">
-        <section className="bg-center bg-no-repeat dashboard bg-blend-darken relative">
+        <section className="bg-center bg-no-repeat dashboard bg-blend-darken relative ">
           <header className="flex items-center justify-between px-4 py-3">
             <div className="flex items-center p-2">
               <img src={logo} alt="wdwd" className="h-14 brightness-200" />

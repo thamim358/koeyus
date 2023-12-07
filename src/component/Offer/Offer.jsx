@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import WOW from "wow.js";
-import { useNavigate } from "react-router-dom";
 import { IconBrandDatabricks } from "@tabler/icons-react";
 
-
 export const Offer = () => {
-  const navigate = useNavigate();
-  const [openModal, setopenModal] = useState(false);
 
   useEffect(() => {
     const wow = new WOW();
     wow.init();
   }, []);
-
-  const handleChange = (value) => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/about");
-  };
 
   return (
     <section id="do">

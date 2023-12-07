@@ -24,9 +24,6 @@ function Services() {
     const wow = new WOW();
     wow.init();
   }, []);
-  const textShadowStyle = {
-    textShadow: "8px 8px 12px rgba(0, 0, 0, 0.5)",
-  };
   const projectData = [
     {
       title: " Design Residential apartments",

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from "../img/logo6.png";
 import WOW from "wow.js";
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
 import Loader from "../../Loader/Loader";
 function Navbar() {
   useEffect(() => {
@@ -10,7 +9,7 @@ function Navbar() {
    
     wow.init();
   }, []);
-  const navigate = useNavigate();
+
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -43,18 +42,15 @@ function Navbar() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate content loading delay (remove this in production)
+
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the delay as needed
+    }, 2000); 
 
     return () => {
       clearTimeout(timeout);
     };
   }, []);
-  const imageStyle = {
-    filter: 'grayscale(100%) ',
-  };
   return (
     
     <>

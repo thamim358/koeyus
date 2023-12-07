@@ -3,11 +3,6 @@ import "./Aboutus.scss"
 import frame from "../img/Frame 14.png";
 import WOW from "wow.js";
 import { useNavigate } from "react-router-dom";
-import {
-    IconArrowElbowRight,
-  } from "@tabler/icons-react";
-  import left from "../img/26.png"
-  import right from "../img/Shape296.png"
 export const AboutUs = () => {
   const navigate = useNavigate();
 
@@ -24,7 +19,7 @@ export const AboutUs = () => {
     {/* <div className=" p-3">
         <img src={right} alt="Side Image" className="photos" />
       </div> */}
-      <div className="section" id="aboutsection"          style={{ textAlign: "justify", textJustify: "auto" }}>
+      <div className="section " id="aboutsection"          style={{ textAlign: "justify", textJustify: "auto" }}>
         
         <div className="py-10 sm:px-2">
           <div className="p-10 flex flex-col lg:flex-row justify-between items-start lg:items-center">

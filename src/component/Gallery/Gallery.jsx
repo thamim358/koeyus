@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import design from "../img/design.jpg";
 import commercial from "../img/commercial.jpg";
 import bunglow from "../img/bunglow.jpg";
