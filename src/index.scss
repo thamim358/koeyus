@@ -8,7 +8,7 @@ body {
   margin: 0;
 
   body {
-    font-family: "Sulphur Point";
+    font-family: "strange";
     
   }
   -webkit-font-smoothing: antialiased;
@@ -21,3 +21,13 @@ body {
   src: url('./Fonts/R&C-Demo.otf') format('opentype');
   /* Add additional font styles here (font-weight, font-style, etc.) if needed */
 }
+@font-face {
+  font-family: 'Achi';
+  src: url('./Fonts/Archistico_Simple.ttf') format('opentype');
+  /* Add additional font styles here (font-weight, font-style, etc.) if needed */
+}
+// @font-face {
+//   font-family: 'strange';
+//   src: url('./Fonts/strange-cool-demo/StrangeCoolDemoRegular.ttf') format('opentype');
+//   /* Add additional font styles here (font-weight, font-style, etc.) if needed */
+// }

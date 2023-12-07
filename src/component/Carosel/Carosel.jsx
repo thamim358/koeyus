@@ -41,7 +41,7 @@ function CardCarousel() {
   return (
     <section className="contact space" id="contactme">
       <div className="lg:px-12 pb-10 sm:p-10 p-10">
-        <div className="text-4xl sm:text-4xl lg:text-5xl text-[#ffd300] font-mono self-start font-bold mb-5">
+        <div className="text-4xl sm:text-4xl lg:text-5xl text-[#FFBF00] font-Achi self-start font-bold mb-5">
           Our Projects
         </div>
         <div className="p-4">

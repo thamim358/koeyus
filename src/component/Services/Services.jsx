@@ -135,7 +135,7 @@ function Services() {
     <>
     <Navbar/>
       <div className="section" id="project">
-        <div className="Name  text-5xl text-[#ffd300] mt-5 font-mono pt-5 font-bold text-center wow fadeInUp">
+        <div className="Name  text-5xl text-[#FFBF00] mt-5 font-Achi pt-5 font-bold text-center wow fadeInUp">
           Services
         </div>
         <div className="">
@@ -176,7 +176,7 @@ function Services() {
                         <IconPhoneCall
                           className="text-gray-400  transform transition duration-500 hover:scale-125"
                           size={30}
-                          style={{ color: "#ffd300" }}
+                          style={{ color: "#FFBF00" }}
                         />
                         </Link>
                         
@@ -227,7 +227,7 @@ function Services() {
                         <IconPhoneCall
                           className="text-gray-400  transform transition duration-500 hover:scale-125"
                           size={30}
-                          style={{ color: "#ffd300" }}
+                          style={{ color: "#FFBF00" }}
                         />
                         </Link>
                         
@@ -275,7 +275,7 @@ function Services() {
                         <IconPhoneCall
                           className="text-gray-400  transform transition duration-500 hover:scale-125"
                           size={30}
-                          style={{ color: "#ffd300" }}
+                          style={{ color: "#FFBF00" }}
                         />
                         </Link>
                         
@@ -326,7 +326,7 @@ function Services() {
                         <IconPhoneCall
                           className="text-gray-400  transform transition duration-500 hover:scale-125"
                           size={30}
-                          style={{ color: "#ffd300" }}
+                          style={{ color: "#FFBF00" }}
                         />
                         </Link>
                         

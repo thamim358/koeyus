@@ -64,7 +64,7 @@ function Navbar() {
         className="sticky  w-full bg-white nav-bar sm:w-full z-10 "
       >
         <div className=" sm:mx-auto md:mx-10 lg:mx-10 flex items-center justify-between py-3 ">
-          <div className=" font-black font-mono text-3xl  ml-4">
+          <div className=" font-black font-Achi text-3xl  ml-4">
             {/* SUMADULA */}
             <img src={logo} alt="wdwd" className="h-10 brightness-200"/>
           </div>
@@ -109,7 +109,7 @@ function Navbar() {
                   to="/"
                 
                 >
-                   <div className="text-black  hover:text-[#ffd300]">Home</div> 
+                   <div className="text-black  hover:text-[#FFBF00]">Home</div> 
                 </Link>
               </li>
               <li >
@@ -117,7 +117,7 @@ function Navbar() {
                   className=" font-semibold font-sans cursor-pointer"
                   to="/services"
                 >
-                   <div className="text-black  hover:text-[#ffd300]">Services</div> 
+                   <div className="text-black  hover:text-[#FFBF00]">Services</div> 
                 </Link>
               </li>
               <li >
@@ -126,7 +126,7 @@ function Navbar() {
                   to="/projects"
                   
                 >
-                  <div className="text-black  hover:text-[#ffd300]">  Projects</div>
+                  <div className="text-black  hover:text-[#FFBF00]">  Projects</div>
                
                 </Link>
               </li>
@@ -136,7 +136,7 @@ function Navbar() {
                   to="/certifications"
                   
                 >
-               <div className="text-black  hover:text-[#ffd300] ">     Certifications</div>
+               <div className="text-black  hover:text-[#FFBF00] ">     Certifications</div>
                 </Link>
               </li>
               <li>
@@ -144,7 +144,7 @@ function Navbar() {
                   className=" font-semibold font-sans cursor-pointer"
                   to="/gallery"
                 >
-                  <div className="text-black  hover:text-[#ffd300]">  Gallery</div>
+                  <div className="text-black  hover:text-[#FFBF00]">  Gallery</div>
                 </Link>
               </li>
               <li className="">
@@ -153,7 +153,7 @@ function Navbar() {
                   to="/contactus"
                   
                 >
-                 <div className="text-black  hover:text-[#ffd300] "> Contact Us </div>
+                 <div className="text-black  hover:text-[#FFBF00] "> Contact Us </div>
                 </Link>
               </li>
               {/* <li className="">
@@ -162,7 +162,7 @@ function Navbar() {
                   to="/login"
                   
                 >
-                 <div className="inline-flex justify-center items-center py-1 px-3 text-base font-medium text-center text-black rounded-lg bg-white  ring-1 ring-black  hover:text-[#ffd300]"> Login / Sign Up</div>
+                 <div className="inline-flex justify-center items-center py-1 px-3 text-base font-medium text-center text-black rounded-lg bg-white  ring-1 ring-black  hover:text-[#FFBF00]"> Login / Sign Up</div>
                 </Link>
               </li> */}
             </ul>
@@ -216,7 +216,7 @@ function Navbar() {
        
               onClick={() => setMobileMenuOpen(false)}
             >
-            <div className="text-black  hover:text-[#ffd300]">Home</div> 
+            <div className="text-black  hover:text-[#FFBF00]">Home</div> 
             </Link>
           </li>
           <li className="">
@@ -225,7 +225,7 @@ function Navbar() {
               to="/services"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-[#ffd300]">Services</div> 
+              <div className="text-black  hover:text-[#FFBF00]">Services</div> 
             </Link>
           </li>
           <li className="">
@@ -234,7 +234,7 @@ function Navbar() {
               to="/projects"
               onClick={() => setMobileMenuOpen(false)}
             >
-            <div className="text-black  hover:text-[#ffd300]">Projects</div> 
+            <div className="text-black  hover:text-[#FFBF00]">Projects</div> 
             </Link>
           </li>
           <li className="">
@@ -243,7 +243,7 @@ function Navbar() {
               to="/certifications"
               onClick={() => setMobileMenuOpen(false)}
             >
-             <div className="text-black  hover:text-[#ffd300]">Certifications</div> 
+             <div className="text-black  hover:text-[#FFBF00]">Certifications</div> 
             </Link>
           </li>
           <li className="">
@@ -252,7 +252,7 @@ function Navbar() {
               to="/gallery"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-[#ffd300]">Gallery</div> 
+              <div className="text-black  hover:text-[#FFBF00]">Gallery</div> 
             </Link>
           </li>
           <li className="">
@@ -261,7 +261,7 @@ function Navbar() {
               to="/contactus"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-[#ffd300]">Contact Us</div> 
+              <div className="text-black  hover:text-[#FFBF00]">Contact Us</div> 
             </Link>
           </li>
         </ul>

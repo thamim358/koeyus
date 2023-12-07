@@ -51,7 +51,7 @@ function Header() {
               {/* Row of circles */}
               {/* <Link to="/link1"> */}
                 <div
-                  className="circle bg-[#ffd300]  w-28 h-28  flex items-center justify-center   rounded-full mr-4 wow bounceInRight p-4 transition duration-500 transform hover:scale-125 "
+                  className="circle bg-[#FFBF00]  w-28 h-28  flex items-center justify-center   rounded-full mr-4 wow bounceInRight p-4 transition duration-500 transform hover:scale-125 "
                   data-wow-duration="3s"
                 >
                   <div className="text-center text-black font-bold ">
@@ -61,7 +61,7 @@ function Header() {
               {/* </Link> */}
               {/* <Link to="/link2"> */}
                 <div
-                  className="circle bg-[#ffd300] w-28 h-28 flex items-center  justify-center  rounded-full mr-4 wow bounceInLeft p-4 transition duration-500 transform hover:scale-125"
+                  className="circle bg-[#FFBF00] w-28 h-28 flex items-center  justify-center  rounded-full mr-4 wow bounceInLeft p-4 transition duration-500 transform hover:scale-125"
                   data-wow-duration="4s"
                 >
                   <div className="text-center text-black font-bold">
@@ -71,7 +71,7 @@ function Header() {
               {/* </Link> */}
               {/* <Link to="/link3"> */}
                 <div
-                  className="circle bg-[#ffd300]  w-28 h-28 flex items-center justify-center rounded-full mr-4 wow bounceInRight transition duration-500 transform hover:scale-125"
+                  className="circle bg-[#FFBF00]  w-28 h-28 flex items-center justify-center rounded-full mr-4 wow bounceInRight transition duration-500 transform hover:scale-125"
                   data-wow-duration="3s"
                 >
                   <div className="text-center text-black font-bold">
@@ -81,7 +81,7 @@ function Header() {
               {/* /</Link> */}
               {/* <Link to="/link4"> */}
                 <div
-                  className="circle bg-[#ffd300]  w-28 h-28 flex items-center justify-center  rounded-full mr-4 wow bounceInLeft transition duration-500 transform hover:scale-125"
+                  className="circle bg-[#FFBF00]  w-28 h-28 flex items-center justify-center  rounded-full mr-4 wow bounceInLeft transition duration-500 transform hover:scale-125"
                   data-wow-duration="4s"
                 >
                   <div className="text-center text-black font-bold">
@@ -95,7 +95,7 @@ function Header() {
           <div className="absolute top-1/2 right-4 transform -translate-y-1/2 mt-0 lg:-mt-5  sm:mt-10">
             {/* <Link to="/link5"> */}
               <div
-                className="circle bg-[#ffd300] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
+                className="circle bg-[#FFBF00] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
                 data-wow-duration="4s"
               >
                 <div className="text-center text-white font-bold">AD</div>
@@ -103,7 +103,7 @@ function Header() {
             {/* </Link> */}
             {/* <Link to="/link6"> */}
               <div
-                className="circle bg-[#ffd300] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
+                className="circle bg-[#FFBF00] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
                 data-wow-duration="3s"
               >
                 <div className="text-center text-white font-bold">ID</div>
@@ -111,7 +111,7 @@ function Header() {
             {/* </Link> */}
             {/* <Link to="/link7"> */}
               <div
-                className="circle bg-[#ffd300] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
+                className="circle bg-[#FFBF00] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
                 data-wow-duration="2s"
               >
                 <div className="text-center text-white font-bold">T/P</div>
@@ -119,7 +119,7 @@ function Header() {
             {/* </Link> */}
             {/* <Link to="/link8"> */}
               <div
-                className="circle bg-[#ffd300] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
+                className=" bg-[#FFBF00] w-16 h-16 flex items-center  justify-center  rounded-full mb-4 wow zoomInDown transition duration-500 transform hover:scale-125"
                 data-wow-duration="1s"
               >
                 <div className=" text-white font-bold">CON</div>

@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'sans': ['Sulphur Point','sans serif'],
         'mono': ['wire-frame', 'sans-serif'],
+        'Achi': ['Achi', 'sans-serif'],
       },
       spacing: {
         '3px': '60px',

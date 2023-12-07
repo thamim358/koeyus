@@ -23,7 +23,7 @@ export const Terms = () => {
         style={{ textAlign: "justify", textJustify: "auto" }}
       >
         <div className="max-w-4xl mx-auto bg-white p-8 rounded shadow-md">
-          <p className="text-4xl sm:text-4xl lg:text-5xl text-[#ffd300] font-mono font-bold text-center wow fadeInUp pt-4 ">
+          <p className="text-4xl sm:text-4xl lg:text-5xl text-[#FFBF00] font-Achi font-bold text-center wow fadeInUp pt-4 ">
             Terms And Conditions
           </p>
           <div className="">

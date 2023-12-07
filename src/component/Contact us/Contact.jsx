@@ -141,7 +141,7 @@ function ContactUs() {
       <section className="contact space">
   
           <div className=" lg:p-3px sm:p-10 p-10">
-          <div className="  text-4xl text-[#ffd300] mb-4 font-bold  font-mono wow fadeInUp ">
+          <div className="  text-4xl text-[#FFBF00] mb-4 font-bold  font-Achi wow fadeInUp ">
                     Book an Appoitment
                   </div>
                   <div className="text-lg font-medium m:mb-5 mb-5">We welcome collaborations, inquiries, and opportunities to bring your architectural visions to life. Reach out to our team to embark on an inspiring journey of design and innovation.</div>
@@ -162,7 +162,7 @@ function ContactUs() {
               <div className="flex ">
                 <div className=" p-2">
                   <IconMail
-                    className="text-[#ffd300]"
+                    className="text-[#FFBF00]"
                     size={40}
            
                   />
@@ -182,7 +182,7 @@ function ContactUs() {
               <div className="flex  mt-3 wow fadeInUp">
                 <div className=" p-2">
                   <IconPhoneCalling
-                    className="text-[#ffd300]"
+                    className="text-[#FFBF00]"
                     size={40}
                   
                   />
@@ -199,7 +199,7 @@ function ContactUs() {
               <div className="flex  mt-3 wow fadeInUp">
                 <div className=" p-2">
                   <IconLocation
-                    className="text-[#ffd300]"
+                    className="text-[#FFBF00]"
                     size={40}
                  
                   />
@@ -274,7 +274,7 @@ function ContactUs() {
                         required
                       ></textarea>
                       <button
-                        className="bg-[#ffd300]  text-black font-bold py-2 px-14 rounded-full  wow bounceIn cursor-pointer "
+                        className="bg-[#FFBF00]  text-black font-bold py-2 px-14 rounded-full  wow bounceIn cursor-pointer "
                         type="submit"
                       >
                         Send

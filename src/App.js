@@ -44,7 +44,7 @@ function App() {
               buttonText="I understand"
               cookieName="myCookieConsent"
               style={{ background: "#ffffff" ,color:"black"}}
-              buttonStyle={{ background: "#ffd300", fontSize: "14px",color:"000000" }}
+              buttonStyle={{ background: "#FFBF00", fontSize: "14px",color:"000000" }}
               expires={365}
             >
               This website uses cookies to enhance the user experience.
