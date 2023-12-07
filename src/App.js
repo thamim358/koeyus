@@ -13,6 +13,10 @@ import ScrollToTop from "./Scrolltotop.jsx";
 import Error from "./Error.js";
 import Login from "./LoginSignup/Login.jsx";
 import Terms from "./component/TermAndConditions/Terms.jsx";
+import Services from "./component/Services/Services.jsx";
+import PrivacyPolicy from "./component/TermAndConditions/Privacypolicy.jsx";
+import Licensing from "./component/TermAndConditions/Licencing.jsx";
+import CookiesPolicy from "./component/TermAndConditions/Cookies.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,7 +44,7 @@ function App() {
               buttonText="I understand"
               cookieName="myCookieConsent"
               style={{ background: "#ffffff" ,color:"black"}}
-              buttonStyle={{ background: "#ffd300", fontSize: "13px",color:"000000" }}
+              buttonStyle={{ background: "#ffd300", fontSize: "14px",color:"000000" }}
               expires={365}
             >
               This website uses cookies to enhance the user experience.
@@ -53,7 +57,11 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/certifications" element={<Certifications />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/license" element={<Licensing />} />
+            <Route path="/cookiespolicy" element={<CookiesPolicy />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
             <Route path="/terms&conditions" element={<Terms />} />
             <Route path="*" element={<Error />} />
             

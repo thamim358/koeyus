@@ -58,6 +58,16 @@ function Footer() {
                     </li>
                     <li>
                       <Link
+                        className="  font-semibold font-sans cursor-pointer"
+                        to="/services"
+                      >
+                        <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
+                          Services{" "}
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         className=" font-semibold font-sans cursor-pointer"
                         to="/projects"
                       >
@@ -141,7 +151,7 @@ function Footer() {
                     <li>
                       <Link
                         className=" font-semibold font-sans cursor-pointer"
-                        to="/cookies"
+                        to="/cookiespolicy"
                       >
                         <div className="text-gray-500 hover:text-[#ffd300] mb-3 ">
                           {" "}
@@ -157,29 +167,26 @@ function Footer() {
             <div className="sm:flex sm:items-center sm:justify-between">
               <span className="text-lg text-black sm:text-center">
                 © 2023{" "}
-                <span className="hover:underline text-[#ffd300]">koyeus</span>. All
-                Rights Reserved.
+                <span className="hover:underline text-[#ffd300]">koyeus</span>.
+                All Rights Reserved.
               </span>
               <div className="flex mt-4 sm:justify-center sm:mt-0">
-                <a
-                  href="#"
-                  className="text-gray-500 hover:text-[#ffd300] "
-                >
-                      <IconBrandFacebook size={30}/>
+                <a href="#" className="text-gray-500 hover:text-[#ffd300] ">
+                  <IconBrandFacebook size={30} />
                   <span className="sr-only">Facebook page</span>
                 </a>
                 <a
                   href="#"
                   className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
-                 <IconBrandInstagram size={30}/>
+                  <IconBrandInstagram size={30} />
                   <span className="sr-only">Instgram page</span>
                 </a>
                 <a
                   href="#"
                   className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
-                       <IconBrandX size={30}/>
+                  <IconBrandX size={30} />
 
                   <span className="sr-only">Twitter page</span>
                 </a>
@@ -187,14 +194,14 @@ function Footer() {
                   href="#"
                   className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
-                <IconBrandLinkedin size={30}/>
+                  <IconBrandLinkedin size={30} />
                   <span className="sr-only">limkdin account</span>
                 </a>
                 <a
                   href="#"
                   className="text-gray-500 hover:text-[#ffd300]  ms-5"
                 >
-                  <IconBrandYoutube size={30}/>
+                  <IconBrandYoutube size={30} />
                   <span className="sr-only">youtube account</span>
                 </a>
               </div>

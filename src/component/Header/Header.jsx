@@ -22,7 +22,7 @@ function Header() {
             <div className="flex items-center p-2">
               <img src={logo} alt="wdwd" className="h-14 brightness-200" />
             </div>
-            <div className="sm:hidden md:hidden lg:block">
+            <div className="hidden lg:block">
               {text.split("").map((letter, index) => (
                 <div
                   key={index}

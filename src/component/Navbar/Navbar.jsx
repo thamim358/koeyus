@@ -115,9 +115,9 @@ function Navbar() {
               <li >
                 <Link
                   className=" font-semibold font-sans cursor-pointer"
-                  to="/"
+                  to="/services"
                 >
-                   <div className="text-black  hover:text-[#ffd300]">About Us</div> 
+                   <div className="text-black  hover:text-[#ffd300]">Services</div> 
                 </Link>
               </li>
               <li >
@@ -222,10 +222,10 @@ function Navbar() {
           <li className="">
             <Link
               className="text-black  hover:text-[#FF5C00] text-xl font-bold font-sans cursor-pointer"
-              to="/"
+              to="/services"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <div className="text-black  hover:text-[#ffd300]">About Us</div> 
+              <div className="text-black  hover:text-[#ffd300]">Services</div> 
             </Link>
           </li>
           <li className="">

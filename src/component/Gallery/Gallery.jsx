@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Loader from "../../Loader/Loader";
+import design from "../img/design.jpg";
+import commercial from "../img/commercial.jpg";
+import bunglow from "../img/bunglow.jpg";
+import club from "../img/club.jpg";
+import residentialInterior from "../img/residentialInterior.jpg";
+import retailInterior from "../img/retailInterior.jpg";
+import corporateInterior from "../img/corporateInterior.jpg";
+import designBuild from "../img/in1 (7).jpg";
+import feasibilityImage from "../img/Leonardo_Diffusion_XL_create_a_architecture_image_for_ui_ux_a_0.jpg";
+import tenderImage from "../img/in1 (1).jpg";
+import tenderdoc from "../img/Leonardo_Diffusion_XL_create_a_architecture_image_for_ui_ux_a_7.jpg";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
@@ -17,45 +27,22 @@ function Gallery() {
           <div className="grid gap-4 mb-10">
             <div>
               <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                className="h-80 max-w-full rounded-lg"
+                src={design}
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                src={commercial}
                 alt=""
               />
             </div>
             <div>
               <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                className="h-60 max-w-full rounded-lg"
+                src={bunglow}
                 alt=""
               />
             </div>
@@ -63,22 +50,22 @@ function Gallery() {
           <div className="grid gap-4">
             <div>
               <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                className="h-60 max-w-full rounded-lg"
+                src={club}
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-60 max-w-full rounded-lg"
+                src={residentialInterior}
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                src={retailInterior}
                 alt=""
               />
             </div>
@@ -86,22 +73,45 @@ function Gallery() {
           <div className="grid gap-4">
             <div>
               <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                className="h-36 max-w-full rounded-lg"
+                src={corporateInterior}
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                src={tenderdoc}
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-60 max-w-full rounded-lg"
+                src={tenderImage}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-56 max-w-full rounded-lg"
+                src={designBuild}
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                src={feasibilityImage}
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src={design}
                 alt=""
               />
             </div>

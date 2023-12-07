@@ -29,7 +29,7 @@
 }
 .cube-folding span::before {
 	content: "";
-	background-color: rgb(255, 196, 0);
+	background-color: rgb(255, 242, 0);
 	position: absolute;
 	left: 0;
 	top: 0; 
@@ -62,7 +62,7 @@
 .cube-folding .leaf3::before {
 	-webkit-animation-delay: 0.9s;
 	animation-delay: 0.9s;
-	background-color: rgb(232, 235, 21);
+	background-color: rgb(251, 255, 40);
 }
 .cube-folding .leaf4 {
 	-webkit-transform: rotateZ(180deg) scale(1.1);
@@ -72,7 +72,7 @@
 .cube-folding .leaf4::before {
 	-webkit-animation-delay: 0.6s;
 	animation-delay: 0.6s;
-	background-color: #ebff56;
+	background-color: rgb(255, 235, 86);
 }
 
 @-webkit-keyframes folding {
